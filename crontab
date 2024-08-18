@@ -1,0 +1,21 @@
+#! /bin/sh
+
+pid="$(head -1 pid)"
+
+if [ "$pid" != "" ]
+then
+  echo "Check previous PID $pid."
+
+  if [ "$pid" != "" ] && ps -p "$pid" > /dev/null
+  then
+     echo "PID $pid is running, does nothing."
+  else
+    echo "PID $pid is not running, run new process."
+
+    ./main
+  fi
+else
+  echo "Previous PID not found, run new process."
+
+  ./main
+fi
