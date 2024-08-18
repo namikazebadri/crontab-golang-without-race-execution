@@ -14,4 +14,4 @@ go build -o main
 
 ## Author
 
-Unis Badri<namikaze.badri@gmail.com>. Visit My [Blog](https://unisbadri.com).
+Unis Badri <namikaze.badri@gmail.com>. Visit My [Blog](https://unisbadri.com).
